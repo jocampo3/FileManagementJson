@@ -14,7 +14,7 @@ import org.json.simple.parser.ParseException;
 public class JsonDisplay {
     public static void main(String[] args) {
         // Define the file path
-        String filePath = "output/records.json";
+        String filePath = "records.json";
 
         // Initialize a list to store the records
         List<JSONObject> records = new ArrayList<>();
@@ -36,7 +36,7 @@ public class JsonDisplay {
 
                 // Store each record in the list
                 for (int i = 0; i < jsonArray.size(); i++) {
-                    output/records.add((JSONObject) jsonArray.get(i));
+                    records.add((JSONObject) jsonArray.get(i));
                 }
             } else if (obj instanceof JSONObject) {
                 JSONObject jsonObject = (JSONObject) obj;
@@ -47,7 +47,7 @@ public class JsonDisplay {
                 if (jsonArray != null) {
                     // Store each record in the list
                     for (int i = 0; i < jsonArray.size(); i++) {
-                        output/records.add((JSONObject) jsonArray.get(i));
+                        records.add((JSONObject) jsonArray.get(i));
                     }
                 }
             }

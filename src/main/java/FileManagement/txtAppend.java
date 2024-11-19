@@ -8,10 +8,10 @@ import java.io.IOException;
 public class txtAppend {
 
     public static void main(String[] args) {
-        String filePath = "output/records.txt";
+        String filePath = "records.txt";
 
         // Five new records to append
-        // to the existing "output/records.txt"
+        // to the existing "records.txt"
         // file.
         String newText = """
                          Sarah,Thompson,03-12-1985,(555) 342-7654,123 Elm St.,Springfield,IL,62704\r
@@ -22,7 +22,7 @@ public class txtAppend {
                          """;
 
         // Append strings of the new records
-        // to "output/records.txt".
+        // to "records.txt".
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
             writer.write(newText);
 

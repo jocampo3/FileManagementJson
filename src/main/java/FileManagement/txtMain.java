@@ -7,7 +7,7 @@ import java.util.Random;
 public class txtMain {
     public static void main(String[] args) {
         // Update the path to your desired directory
-        String filePath = "output/records.txt";
+        String filePath = "records.txt";
 
         // Sample data arrays
         String[] firstNames = {"Sarah", "James", "Emily", "Michael", "Olivia", "David", "Sophia", "Daniel", "Isabella", "Matthew"};

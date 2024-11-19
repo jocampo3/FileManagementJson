@@ -12,7 +12,7 @@ import org.json.simple.parser.ParseException;
 public class JsonAppend {
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
-        String filePath = "output/records.json";
+        String filePath = "records.json";
 
         // Read existing JSON data from the file
         JSONArray existingData = readJSONData(filePath);

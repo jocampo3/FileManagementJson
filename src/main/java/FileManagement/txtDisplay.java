@@ -12,8 +12,8 @@ public class txtDisplay {
 
     public static void main(String[] args) {
         
-        // Load data from file "output/records.txt".
-        String filePath = "output/records.txt";
+        // Load data from file "records.txt".
+        String filePath = "records.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             

@@ -10,7 +10,7 @@ import org.json.simple.JSONObject;
 public class JsonMain {
     public static void main(String[] args) {
         // Update the path to your desired directory
-        String filePath = "output/records.json";
+        String filePath = "records.json";
 
         // Sample data arrays
         String[] firstNames = {"Sarah", "James", "Emily", "Michael", "Olivia", "David", "Sophia", "Daniel", "Isabella", "Matthew"};
@@ -50,11 +50,11 @@ public class JsonMain {
             record.put("address", (random.nextInt(999) + 1) + " " + streets[streetIndex] + ", " + cities[cityIndex] + ", " + states[stateIndex] + " " + zipCodes[zipIndex]);
 
             // Add the record to the array
-            output/records.add(record);
+            records.add(record);
         }
         // Write the JSON array to a file
         try (FileWriter file = new FileWriter(filePath)) {
-            file.write(output/records.toJSONString());
+            file.write(records.toJSONString());
             System.out.println("JSON file created: " + records);
         } catch (IOException e) {
             e.printStackTrace();
